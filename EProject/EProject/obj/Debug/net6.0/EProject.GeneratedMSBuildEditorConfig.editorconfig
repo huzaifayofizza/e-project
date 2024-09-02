@@ -1,0 +1,143 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = EProject
+build_property.RootNamespace = EProject
+build_property.ProjectDir = C:\Users\neelam\Desktop\9. E-Project 2211C2\HDSE-I\InstituteofFineArts\EProject\EProject\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\neelam\Desktop\9. E-Project 2211C2\HDSE-I\InstituteofFineArts\EProject\EProject
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/neelam/Desktop/9. E-Project 2211C2/HDSE-I/InstituteofFineArts/EProject/EProject/Views/Admin/Competition.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ29tcGV0aXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neelam/Desktop/9. E-Project 2211C2/HDSE-I/InstituteofFineArts/EProject/EProject/Views/Admin/EditCompetition.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdENvbXBldGl0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neelam/Desktop/9. E-Project 2211C2/HDSE-I/InstituteofFineArts/EProject/EProject/Views/Admin/FetchComp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRmV0Y2hDb21wLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neelam/Desktop/9. E-Project 2211C2/HDSE-I/InstituteofFineArts/EProject/EProject/Views/Admin/IndexAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXhBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neelam/Desktop/9. E-Project 2211C2/HDSE-I/InstituteofFineArts/EProject/EProject/Views/Admin/StaffRecord.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU3RhZmZSZWNvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neelam/Desktop/9. E-Project 2211C2/HDSE-I/InstituteofFineArts/EProject/EProject/Views/Home/about.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxhYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neelam/Desktop/9. E-Project 2211C2/HDSE-I/InstituteofFineArts/EProject/EProject/Views/Home/contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neelam/Desktop/9. E-Project 2211C2/HDSE-I/InstituteofFineArts/EProject/EProject/Views/Home/exhibition.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxleGhpYml0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neelam/Desktop/9. E-Project 2211C2/HDSE-I/InstituteofFineArts/EProject/EProject/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neelam/Desktop/9. E-Project 2211C2/HDSE-I/InstituteofFineArts/EProject/EProject/Views/Home/login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxsb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neelam/Desktop/9. E-Project 2211C2/HDSE-I/InstituteofFineArts/EProject/EProject/Views/Home/Posting.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQb3N0aW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neelam/Desktop/9. E-Project 2211C2/HDSE-I/InstituteofFineArts/EProject/EProject/Views/Home/RegisterStaff.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3RlclN0YWZmLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neelam/Desktop/9. E-Project 2211C2/HDSE-I/InstituteofFineArts/EProject/EProject/Views/Home/RegisterUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3RlclVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neelam/Desktop/9. E-Project 2211C2/HDSE-I/InstituteofFineArts/EProject/EProject/Views/Manager/AwardDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlclxBd2FyZERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neelam/Desktop/9. E-Project 2211C2/HDSE-I/InstituteofFineArts/EProject/EProject/Views/Manager/Competition.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlclxDb21wZXRpdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neelam/Desktop/9. E-Project 2211C2/HDSE-I/InstituteofFineArts/EProject/EProject/Views/Manager/exihibition.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlclxleGloaWJpdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neelam/Desktop/9. E-Project 2211C2/HDSE-I/InstituteofFineArts/EProject/EProject/Views/Manager/IndexManager.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlclxJbmRleE1hbmFnZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neelam/Desktop/9. E-Project 2211C2/HDSE-I/InstituteofFineArts/EProject/EProject/Views/Manager/StaffRecord.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlclxTdGFmZlJlY29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neelam/Desktop/9. E-Project 2211C2/HDSE-I/InstituteofFineArts/EProject/EProject/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neelam/Desktop/9. E-Project 2211C2/HDSE-I/InstituteofFineArts/EProject/EProject/Views/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neelam/Desktop/9. E-Project 2211C2/HDSE-I/InstituteofFineArts/EProject/EProject/Views/Shared/_LayoutManager.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRNYW5hZ2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neelam/Desktop/9. E-Project 2211C2/HDSE-I/InstituteofFineArts/EProject/EProject/Views/Shared/_LayoutStaff.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRTdGFmZi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neelam/Desktop/9. E-Project 2211C2/HDSE-I/InstituteofFineArts/EProject/EProject/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neelam/Desktop/9. E-Project 2211C2/HDSE-I/InstituteofFineArts/EProject/EProject/Views/Staff/Competition.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcQ29tcGV0aXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neelam/Desktop/9. E-Project 2211C2/HDSE-I/InstituteofFineArts/EProject/EProject/Views/Staff/exihibition.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcZXhpaGliaXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neelam/Desktop/9. E-Project 2211C2/HDSE-I/InstituteofFineArts/EProject/EProject/Views/Staff/exihibitionForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcZXhpaGliaXRpb25Gb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neelam/Desktop/9. E-Project 2211C2/HDSE-I/InstituteofFineArts/EProject/EProject/Views/Staff/IndexStaff.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcSW5kZXhTdGFmZi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neelam/Desktop/9. E-Project 2211C2/HDSE-I/InstituteofFineArts/EProject/EProject/Views/Staff/Posting.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcUG9zdGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neelam/Desktop/9. E-Project 2211C2/HDSE-I/InstituteofFineArts/EProject/EProject/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neelam/Desktop/9. E-Project 2211C2/HDSE-I/InstituteofFineArts/EProject/EProject/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/neelam/Desktop/9. E-Project 2211C2/HDSE-I/InstituteofFineArts/EProject/EProject/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-clg7lkmte8

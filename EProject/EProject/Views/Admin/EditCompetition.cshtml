@@ -1,0 +1,44 @@
+﻿@model EProject.Models.Competition
+
+@{
+    Layout = "_LayoutAdmin";
+}
+
+<div class="container mt-5">
+    <div class="col-md-12 col-lg-12">
+        <div class="card">
+            <div class="card-header text-center"> <span style="color: #F7631B;"> <h4> Update Competition Form </h4></span></></div>
+            <div class="card-body">
+                <form asp-controller="Admin" asp-action="EditCompetition2" enctype="multipart/form-data" method="post">
+                    @Html.AntiForgeryToken()
+                    <div class="mb-3">
+                        <input type="hidden" asp-for="CompetitionId" class="form-control" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="text" class="form-label">Competition Title</label>
+                        <input type="text" asp-for="CompetitionTitle" placeholder="Enter Competition Title....." class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="file" class="form-label">Competition Banner</label>
+                        <input type="file" name="file" class="form-control">
+                        <img src="~/@Model.CompetitionBanner" width="60" height="60">
+                    </div>
+                    <div class="mb-3">
+                        <label for="date" class="form-label">Competition Start Date</label>
+                        <input type="date" asp-for="CompStartDate" placeholder="Competition Start Date...." class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="date" class="form-label">Competition End-Date</label>
+                        <input type="date" asp-for="CompEndDate" placeholder="Competition End Date...." class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="submit" class="btn btn-danger fw-bold" style="background-color: #00B5AD; border: none;">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>

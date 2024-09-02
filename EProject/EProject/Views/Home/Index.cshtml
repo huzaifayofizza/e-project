@@ -1,0 +1,164 @@
+﻿@model EProject.Models.Competition
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- banner  -->
+
+<section class="banner-area relative" style="background-image:url('../../img/banner-bg.jpg'); background-size:cover" id="home">
+	<div class="overlay overlay-bg"></div>
+	<div class="container">
+		<div class="row fullscreen d-flex align-items-center justify-content-between">
+			<div class="banner-content col-lg-9 col-md-12">
+				<h1 class="text-uppercase">
+					Annual Painting Competition
+					Invites Artists to Showcase their Talent
+				</h1>
+				<p class="pt-10 pb-10">
+					Explore the depths of imagination and bring forth visions that defy convention. Join us as we celebrate the power of art to reveal the unseen and ignite the imagination.
+				</p>
+				<a asp-controller="Home" asp-action="login" class="primary-btn text-uppercase">Create Your Account</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- Hint Item 3 div  -->
+
+<section class="feature-area">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4">
+				<div class="single-feature">
+					<a href="#teachersec">
+						<div class="title">
+							<h4>Teacher Sign-up</h4>
+						</div>
+						<div class="desc-wrap">
+							<p style="color: rgb(119, 119, 119);">
+								Gain valuable skills, knowledge,to become an effective educator.
+								Prepare to inspire and shape the future generation.
+							</p>
+							<a href="#">View More</a>
+						</div>
+				</div>
+			</div>
+			</a>
+			<div class="col-lg-4">
+				<div class="single-feature">
+					<a href="login.html">
+						<div class="title">
+							<h4>Students create Your Account</h4>
+						</div>
+						<div class="desc-wrap">
+							<p style="color: rgb(119, 119, 119);">
+								Join a vibrant community of learners and start your journey towards academic success.
+							</p>
+							<a href="#">View More</a>
+						</div>
+				</div>
+			</div>
+			</a>
+			<div class="col-lg-4">
+				<div class="single-feature">
+					<a href="#registersec" style="transition: all ease-in .3s;">
+						<div class="title">
+							<h4>Latest Competition</h4>
+						</div>
+						<div class="desc-wrap">
+							<p style="color: rgb(119, 119, 119);">
+								Show off your artistic skills and imagination as you paint your way to victory in this exciting event.
+							</p>
+							<a href="#">View More</a>
+						</div>
+				</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+<br>
+<br>
+<br>
+
+<!-- feature Competition -->
+<section class="upcoming-event-area pb-120 mt-5">
+	<div class="container">
+		<div class="row d-flex justify-content-center">
+			<div class="menu-content pb-70 col-lg-8">
+				<div class="title text-center">
+					<h1 class="mb-10">Upcoming Events of our Institute</h1>
+					<hr class="m-auto" style="border: 1px solid #F76314" width="205vw"><br>
+					<p>If you are a serious astronomy fanatic like a lot of us</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="active-upcoming-event-carusel">
+				@foreach (var item in ViewBag.AllComp)
+				{
+					<div class="single-carusel row align-items-center">
+						<div class="col-12 col-md-6 thumb">
+							<img class="img-fluid" src="~/@item.CompetitionBanner">
+						</div>
+						<div class="detials col-12 col-md-6">
+							<p> <span>Start-Date</span> @item.CompStartDate</p>
+							<a href="#">
+								<h4>
+									@item.CompetitionTitle
+								</h4>
+							</a>
+							<p>
+								<span>End-Date</span> @item.CompEndDate
+							</p>
+							@if (DateTime.Now >= DateTime.Parse(item.CompStartDate) && DateTime.Now <= DateTime.Parse(item.CompEndDate))
+							{
+								<a class="primary-btn wh" asp-action="Posting" asp-route-id="@item.CompetitionId" asp-controller="Home">Posting</a>
+							}
+
+						</div>
+					</div>
+				}
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- teacher -->
+
+<section class="cta-one-area relative section-gap" style="background-image:url('../../img/cta-bg.jpg'); background-size:cover;" id="teachersec">
+	<div class="container">
+		<div class="overlay overlay-bg"></div>
+		<div class="row justify-content-center">
+			<div class="wrap">
+				<h1 class="text-white">Sign Up To Became A Teacher</h1>
+				<p>
+					Fine art refers to visual art forms created primarily for their aesthetic and intellectual value rather than for utility or commercial purposes. It encompasses a broad range of artistic expressions, including painting, sculpture, drawing, printmaking, photography, and more. Fine art is often characterized by its focus on creativity, skillful execution, and emotional or conceptual depth.
+				</p>
+				<a class="primary-btn wh" asp-controller="Home" asp-action="RegisterStaff" class="primary-btn wh">Apply For The Teacher</a>
+			</div>
+		</div>
+	</div>
+</section>
+@{
+	string loginMsg = TempData["loginMsg"] as string;
+
+}
+@{
+	string posting  = TempData["Message"] as string;
+
+}
+@if (!string.IsNullOrEmpty(posting))
+{
+	<script>
+		alert("@posting");
+	</script>
+}
+
+@if (!string.IsNullOrEmpty(loginMsg))
+{
+	<script>
+		alert("@loginMsg");
+	</script>
+}

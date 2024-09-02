@@ -1,0 +1,74 @@
+﻿@model IEnumerable<EProject.Models.Exhibition>
+@using System.Security.Claims;
+@{
+	string userName = User.FindFirst(ClaimTypes.Name)?.Value;
+}
+
+<section class="banner-area relative about-banner" style="background-image:url('../../img/banner-bg.jpg'); background-size:cover" id="home">
+	<div class="overlay overlay-bg"></div>
+	<div class="container">
+		<div class="row d-flex align-items-center justify-content-center">
+			<div class="about-content col-lg-12">
+				<h1 class="text-white">
+					Exhibition We Offer
+				</h1>
+				<p class="text-white link-nav"><a href="index.html">Home </a> <span class="lnr lnr-arrow-right"></span> <a href="courses.html"> Exhibition Images</a></p>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- Students Painting we offer -->
+
+<section class="popular-course-area section-gap">
+	<div class="container">
+		<div class="row d-flex justify-content-center">
+			<div class="menu-content pb-70 col-lg-8">
+				<div class="title text-center">
+					<h1 class="mb-10">Students Exhibition We Offer</h1>
+					<hr class="m-auto" style="border: 1px solid #F76314" width="255vw"><br>
+					<p>There is a moment in the life of any aspiring.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			@foreach (var item in Model)
+                        {
+			<div class="active-popular-carusel">
+				<div class="single-popular-carusel">
+					<div class="thumb-wrap relative">
+						<div class="thumb relative">
+							<div class="overlay overlay-bg"></div>
+								<img src="~/@item.ExhibitionImage" class="d-flex m-auto" alt="...">
+						</div>
+						<div class="meta d-flex justify-content-between">
+
+								<h4><span>$</span>@item.ExhibitionPrice</h4>
+						</div>
+					</div>
+					<div class="details">
+							@if (userName != null)
+							{
+								<h4>
+									@userName
+								</h4>
+							}
+					</div>
+				</div>
+			</div>
+	}
+</section>
+
+<section class="cta-two-area">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 cta-left">
+				<h1>Not Yet Registered your Account?</h1>
+			</div>
+			<div class="col-lg-4 cta-right">
+				<a class="primary-btn wh" asp-controller="Home" asp-action="register">Register Now</a>
+			</div>
+		</div>
+	</div>
+</section>

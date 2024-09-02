@@ -1,0 +1,61 @@
+﻿@model EProject.Models.Posting
+
+<!-- banner  -->
+<section class="banner-area relative" style="background-image:url('../../img/banner-bg.jpg'); background-size:cover" id="home">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row fullscreen d-flex align-items-center justify-content-between">
+            <div class="banner-content col-lg-9 col-md-12">
+                <h1 class="text-uppercase"> Annual Painting Competition Invites Artists to Showcase their Talent </h1>
+                <p class="pt-10 pb-10"> Explore the depths of imagination and bring forth visions that defy convention. Join us as we celebrate the power of art to reveal the unseen and ignite the imagination.  </p>
+               <a asp-controller="Home" asp-action="login" class="primary-btn text-uppercase">Create Your Account</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Latest Competition -->
+@if (ViewBag.SpecificComp != null)
+{
+    <section class="search-course-area relative" style="background-image:url('@ViewBag.SpecificComp.CompetitionBanner'); background-size:cover">
+        <div class="overlay overlay-bg"></div>
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-6 col-md-6 search-course-left">
+                    <h1 class="text-white">@ViewBag.SpecificComp.CompetitionTitle</h1>
+                    <h5 class="text-white">@ViewBag.SpecificComp.CompStartDate <span>TO</span> @ViewBag.SpecificComp.CompEndDate</h5>
+                </div>
+                <div class="col-lg-4 col-md-6 search-course-right section-gap">
+                    <form class="form-wrap" method="post" enctype="multipart/form-data" action="~/Home/AddPosting">
+                        @Html.AntiForgeryToken()
+                        <h4 class="pb-20 text-center text-white mb-30">Posting Here!</h4>
+                        <input type="hidden" name="PostCompetitionId" asp-for="PostCompetitionId" value="@ViewBag.SpecificComp.CompetitionId">
+
+                        <input type="date" class="form-control" asp-for="PostDate" name="PostDate" min="@ViewBag.SpecificComp.CompStartDate" max="@ViewBag.SpecificComp.CompEndDate">
+                        <input type="file" class="form-control" asp-for="PostImg" name="file">
+                        <button type="submit" class="primary-btn text-uppercase">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+}
+else
+{
+    <p>No competition found.</p>
+}
+
+
+
+
+<script>
+	$(document).ready(function () {
+		var minDate = new Date(); // Today's date
+		minDate.setDate(minDate.getDate() - 1); // Example: Set minimum date to yesterday
+		var maxDate = new Date(); // Today's date
+
+		$('#dateInput').attr('min', minDate.toISOString().split('T')[0]);
+		$('#dateInput').attr('max', maxDate.toISOString().split('T')[0]);
+	});
+</script>
+

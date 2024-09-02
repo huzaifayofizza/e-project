@@ -1,0 +1,49 @@
+﻿@model EProject.Models.UserRecord
+
+<section class="banner-area relative about-banner" style="background-image:url('../../img/banner-bg.jpg'); background-size:cover" id="home">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="about-content col-lg-12">
+                <h1 class="text-white">
+                    Sign Up
+                </h1>
+                <p class="text-white link-nav"><a href="index.html">Home </a> <span class="lnr lnr-arrow-right"></span> <a href="login.html">Sign Up</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- teacher admission -->
+<section class="search-course-area relative" style="background-image: none;">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-lg-6 col-md-6 search-course-left">
+                <h1 class="text-white">
+                    Sign Up<br>
+                    To Become A Teacher
+                </h1>
+                <p>
+                    Fine art refers to visual art forms created primarily for their aesthetic and intellectual value rather than for utility or commercial purposes. It encompasses a broad range of artistic expressions, including painting, sculpture, drawing, printmaking, photography, and more. Fine art is often characterized by its focus on creativity, skillful execution, and emotional or conceptual depth.
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 search-course-right section-gap">
+                <form asp-validation-summary="ModelOnly" class="form-wrap" method="POST">
+                    <h4 class="text-white pb-20 text-center mb-30">Apply For Teaching Post!</h4>
+                    <input type="text" class="form-control" asp-for="UserName" placeholder="Your  Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your  Name'">
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                    <input type="number" class="form-control" asp-for="UserContactNum" placeholder="Your Phone" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Phone'">
+                    <span asp-validation-for="UserContactNum" class="text-danger"></span>
+                    <input type="email" class="form-control" asp-for="UserEmail" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address'">
+                    <span asp-validation-for="UserEmail" class="text-danger"></span>
+                    <input type="password" class="form-control" asp-for="UserPassword" placeholder="Your Email Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Password'">
+                    <span asp-validation-for="UserPassword" class="text-danger"></span>
+                    <input type="hidden"  value="0" asp-for="UserStatus" class="form-control" />
+                    <input type="hidden" value="3" asp-for="UserRoleId" class="form-control" />
+                    <button class="primary-btn text-uppercase">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

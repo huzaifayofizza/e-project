@@ -1,0 +1,55 @@
+﻿@model EProject.Models.UserRecord
+
+<section class="banner-area relative about-banner" style="background-image:url('../../img/banner-bg.jpg'); background-size:cover" id="home">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="about-content col-lg-12">
+                <h1 class="text-white">
+                    Login
+                </h1>
+                <p class="text-white link-nav"><a href="index.html">Home </a> <span class="lnr lnr-arrow-right"></span> <a href="login.html">Login</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="search-course-area relative" style="background-image: none;">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-lg-6 col-md-6 search-course-left">
+                <h1 class="text-white">
+                    Login Here ! <br>
+                    For The Competition!
+                </h1>
+                <p>
+                    inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach.
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 search-course-right section-gap">
+                <form class="form-wrap" asp-action="Login">
+                    <h4 class="text-white text-center">Login Your Account</h4>
+                    <hr class="m-auto mb-30" style="border: 1px solid #F76314" width="85vw">
+                    <input type="email" asp-for="UserEmail" class="form-control" placeholder="Your Email Address">
+                    <input type="Password" asp-for="UserPassword" class="form-control" placeholder="Your Password">
+                    <button type="submit" class="primary-btn text-uppercase">Submit</button>
+                    <a class="primary-btn wh" asp-controller="Home" asp-action="register">Register Now</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+@{
+    string RegMessage = TempData["Message"] as string;
+}
+
+@if (!string.IsNullOrEmpty(RegMessage))
+{
+    <script>
+        alert("@RegMessage");
+    </script>
+}

@@ -1,0 +1,28 @@
+﻿@model EProject.Models.Exhibition
+@{
+    Layout = "_LayoutStaff";
+}
+
+<div class="container mt-5">
+    <div class="col-md-12 col-lg-12">
+        <div class="card">
+            <div class="card-header text-center"> <span style="color: #F7631B;"> <h4> Exihibition Form </h4></span></></div>
+            <div class="card-body">
+                <form asp-controller="Staff" enctype="multipart/form-data" method="post">
+                    @Html.AntiForgeryToken()
+                    <div class="mb-3">
+                        <label for="file" class="form-label">Exibition Image</label>
+                        <input type="file" name="file" placeholder="Put Exibition Image Here....." class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="number" class="form-label">Image Price</label>
+                        <input type="number" asp-for="ExhibitionPrice" placeholder=" Enter Image Price...." class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="submit" class="btn btn-danger fw-bold" style="background-color: #00B5AD; border: none;">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+﻿@model IEnumerable<EProject.Models.UserRecord>
+
+@{
+    Layout = "_LayoutAdmin";
+}
+
+<div class="container mt-5">
+    <div class="col-md-12 col-lg-12">
+        <div class="card">
+            <div class="card-header">OnGoing Competition</div>
+            <div class="card-body">
+                <p class="card-title"></p>
+                <table class="table table-hover" id="dataTables-example" width="100%">
+                    <thead>
+                        <tr>
+                            <th>Staff Name</th>
+                            <th>Staff ContactNum</th>
+                            <th>Staff E-mail</th>
+                            <th>Approve</th>
+                            <th>Reject</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                               
+                                <td>@item.UserName</td>
+                                <td>@item.UserContactNum</td>
+                                <td>@item.UserEmail</td>
+                                <td>
+                                    <a asp-route-id="@item.UserId" asp-controller="Admin" asp-action="ApproveStaff" class="btn btn fw-bold text-white mt-2" style="background-color: #00B5AD;">APPROVE</a>
+                                </td>
+                                <td>
+                                    <a asp-route-id="@item.UserId" asp-controller="Admin" asp-action="DisApproveStaff" class="btn btn-danger fw-bold text-white mt-2">DISAPPROVE</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="~/img/fav.png">
+    <link href="~/img/logo.png" rel="shortcut icon" />
+
+    <meta name="author" content="colorlib">
+
+    <meta name="description" content="Your website description here">
+
+    <meta name="keywords" content="keyword1, keyword2, keyword3">
+
+    <meta charset="UTF-8">
+
+    <title>Fine Arts</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/css//bootstrap.css">
+    <link rel="stylesheet" href="~/css//magnific-popup.css">
+    <link rel="stylesheet" href="~/css//nice-select.css">
+    <link rel="stylesheet" href="~/css//animate.min.css">
+    <link rel="stylesheet" href="~/css//owl.carousel.css">
+    <link rel="stylesheet" href="~/css//jquery-ui.css">
+    <link rel="stylesheet" href="~/css//main.css">
+</head>
+<body>
+    <header id="header" id="home">
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6 col-8 header-top-left no-padding">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-4 header-top-right no-padding">
+                        <a href="tel:+953 012 3654 896"><span class="lnr lnr-phone-handset"></span> <span class="text">+953 012 3654 896</span></a>
+                        <a href="/cdn-cgi/l/email-protection#44373134342b363004272b282b36282d266a272b29"><span class="lnr lnr-envelope"></span> <span class="text"><span class="__cf_email__" data-cfemail="64171114140b161024070b080b16080d064a070b09">finearts@gmail.com</span></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container main-menu">
+            <div class="row align-items-center justify-content-between d-flex">
+                <div id="logo">
+                    <a href="index.html"><img src="~/img/logo.png" style="height: 8vh;" /></a>
+                </div>
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+                        <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li><a asp-controller="Home" asp-action="about">About</a></li>
+                        <li><a asp-controller="Home" asp-action="exhibition">Exhibition</a></li>
+                        <li><a asp-controller="Home" asp-action="contact">Contact</a></li>
+                        @using System.Security.Claims;
+                        @{
+                            string userName = User.FindFirst(ClaimTypes.Name)?.Value;
+                        }
+                        @if (userName != null)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="home">
+                                    @userName
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Logout">Logout</a>
+                            </li>
+                        }
+
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="RegisterUser">Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Login">Login</a>
+                            </li>
+                        }
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+
+    <!-- footer -->
+
+    <footer class="footer-area section-gap">
+        <div class="container">
+            <div class="row d-flex justify-content-between m-auto ">
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img src="~/img/logo.png" style="height: 10vh;" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h4>Links</h4>
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="exhibition.html">Exhibition</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="#">Hinkle Deegan Lake Road</a></li>
+                            <li><a href="#">00 (958) 9865 562</a></li>
+                            <li><a href="#">finearts@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h4>Newsletter</h4>
+                        <p>Stay update with our latest</p>
+                        <div id="mc_embed_signup">
+                            <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="EMAIL" placeholder="Enter Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email Address '" required type="email">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default" type="submit">
+                                            <span style="font-size: 12px;">Submit</span>
+                                        </button>
+                                    </div>
+                                    <div class="info"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom row align-items-center justify-content-between">
+                <p class="footer-text m-0 col-lg-6 col-md-12">
+                    Copyright Institude Of Fine Arts</a>
+                </p>
+                <div class="col-lg-6 col-sm-12 footer-social">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/js//vendor/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="~/js//vendor/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+    <script src="~/js//easing.min.js"></script>
+    <script src="~/js//hoverIntent.js"></script>
+    <script src="~/js//superfish.min.js"></script>
+    <script src="~/js//jquery.ajaxchimp.min.js"></script>
+    <script src="~/js//jquery.magnific-popup.min.js"></script>
+    <script src="~/js//jquery.tabs.min.js"></script>
+    <script src="~/js//jquery.nice-select.min.js"></script>
+    <script src="~/js//owl.carousel.min.js"></script>
+    <script src="~/js//mail-script.js"></script>
+    <script src="~/js//main.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23581568-13');
+    </script>
+</body>
+</html>
